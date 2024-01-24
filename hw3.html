@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="hw3.css">
+
+    <style></style>
+</head>
+
+<body>
+    <form name="mainForm" onsubmit="return false">
+        <fieldset id="first-section">
+            <legend>Click for New User or Existing User</legend>
+            <button onclick="enableNewUser()">Click for New User</button>
+            <button onclick="enableExistingUser()">Click for Existing User</button>
+        </fieldset>
+
+        <fieldset id="second-section" class="disabled">
+            <legend>New User</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" required><br><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" required><br><br>
+            <button onclick="saveUserInfo()">Login</button>
+        </fieldset>
+
+        <fieldset id="third-section" class="disabled">
+            <legend>Existing User</legend>
+            <label for="existingUsername">Username:</label>
+            <input type="text" id="existingUsername" required><br><br>
+            <label for="existingPassword">Password:</label>
+            <input type="password" id="existingPassword" required><br><br>
+            <button onclick="checkCredentials()">Login</button>
+        </fieldset>
+    </form>
+<script src="Untitled-1.js"></script>
+    <script></script>
+</body>
+
+</html>
